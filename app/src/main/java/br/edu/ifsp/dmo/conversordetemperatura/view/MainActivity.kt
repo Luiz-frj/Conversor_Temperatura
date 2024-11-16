@@ -21,10 +21,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater);
         setContentView(binding.root);
 
-        setClicListener();
+        setClickListener();
     }
 
-    private fun setClicListener() {
+    private fun setClickListener() {
         binding.btnCelsius.setOnClickListener{
             handleConversion(CelsiusStrategy);
         }

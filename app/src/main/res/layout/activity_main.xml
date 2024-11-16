@@ -53,8 +53,8 @@
         android:id="@+id/textview_temperature"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="@string/hint_temperature"
+        android:layout_marginTop="48dp"
+        android:text="@string/temperature"
         android:textSize="16sp"
         android:textStyle="bold"
         android:textAllCaps="true"
@@ -66,10 +66,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="@string/hint_temperature"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
         android:textAlignment="center"
-        app:layout_constraintBaseline_toBaselineOf="@id/textview_temperature"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textview_temperature"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/textview_temperature"/>
+        app:layout_constraintStart_toEndOf="@+id/textview_temperature" />
     
     <Button
         android:id="@+id/btn_celsius"
@@ -80,7 +82,7 @@
         android:textAllCaps="true"
         app:layout_constraintEnd_toStartOf="@+id/btn_fahrenheit"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideline_horizontal1"/>
+        app:layout_constraintTop_toBottomOf="@+id/guideline_horizontal1"/>
 
     <Button
         android:id="@+id/btn_fahrenheit"
@@ -90,8 +92,8 @@
         android:text="@string/fahrenheit"
         android:textAllCaps="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/btn_celsius"
-        app:layout_constraintTop_toBottomOf="@id/guideline_horizontal1"/>
+        app:layout_constraintStart_toEndOf="@+id/btn_celsius"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_horizontal1"/>
     
     <TextView
         android:id="@+id/textview_result_number"
@@ -109,31 +111,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:textColor="@color/output"
         app:layout_constraintEnd_toEndOf="@id/textview_result_number"
         app:layout_constraintStart_toStartOf="@id/textview_result_number"
-        app:layout_constraintTop_toBottomOf="@id/guideline_horizontal2"/>
+        app:layout_constraintTop_toBottomOf="+@id/guideline_horizontal2"/>
 
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-<!--
-    <ImageView
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginEnd="8dp"
-        android:src="@drawable/baseline_thermostat_24"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/app_name"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="109dp"
-        tools:ignore="MissingConstraints" />
--->

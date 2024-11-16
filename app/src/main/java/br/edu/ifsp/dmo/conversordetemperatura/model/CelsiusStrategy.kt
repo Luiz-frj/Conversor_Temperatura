@@ -1,6 +1,6 @@
 package br.edu.ifsp.dmo.conversordetemperatura.model
 
-class CelsiusStrategy: TemperatureConverter{
+object CelsiusStrategy: TemperatureConverter{
     override fun converter(temperature: Double): Double = (temperature - 32) / 1.8;
 
     /*
