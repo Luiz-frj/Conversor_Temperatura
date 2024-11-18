@@ -94,6 +94,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn_celsius"
         app:layout_constraintTop_toBottomOf="@+id/guideline_horizontal1"/>
+
+    <Button
+        android:id="@+id/btn_kelvin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/kelvin"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_horizontal1" />
     
     <TextView
         android:id="@+id/textview_result_number"

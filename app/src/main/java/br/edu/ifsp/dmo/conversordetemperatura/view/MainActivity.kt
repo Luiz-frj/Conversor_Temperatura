@@ -9,6 +9,7 @@ import br.edu.ifsp.dmo.conversordetemperatura.R
 import br.edu.ifsp.dmo.conversordetemperatura.databinding.ActivityMainBinding
 import br.edu.ifsp.dmo.conversordetemperatura.model.CelsiusStrategy
 import br.edu.ifsp.dmo.conversordetemperatura.model.FahrenheitStrategy
+import br.edu.ifsp.dmo.conversordetemperatura.model.KelvinStrategy
 import br.edu.ifsp.dmo.conversordetemperatura.model.TemperatureConverter
 
 class MainActivity : AppCompatActivity() {
@@ -32,6 +33,10 @@ class MainActivity : AppCompatActivity() {
         binding.btnFahrenheit.setOnClickListener(View.OnClickListener {
             handleConversion(FahrenheitStrategy);
         });
+
+        binding.btnKelvin.setOnClickListener{
+            handleConversion(KelvinStrategy);
+        }
     }
 
     private fun readTemperature(): Double{
